@@ -1,0 +1,196 @@
+/* preloader */
+
+.preloader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-image: url('../images/foldergif.gif');
+  background-repeat: no-repeat; 
+  background-color: #EFEAF0;
+  background-position: center;
+}
+
+/* body */
+
+body {
+    font-family: Arial !important;
+    font-size: 18px;
+    background-color: #EFEAF0;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 650px;
+  }
+  
+  .textbox {
+    display: inline;
+    text-align: justify;
+  }
+
+  .top {
+    padding: 25px;
+
+  }
+  
+  
+  /* text boxes */
+  
+  .container {
+    background-color: white;
+    border-radius: 10px;
+    border: solid black 1px;
+    box-shadow: 5px 5px;
+    position: relative;
+    text-align: justify;
+    color: black;
+    width: 600px;
+    height: 300px;
+    padding: 15px;
+    overflow-y: auto;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-family: Arial;
+    font-size: 24px;
+    text-decoration: underline;
+  }
+  
+  #gridContainer {
+    margin: 0px 5%;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 214px 214px 214px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "finalproject ourhouse"
+    "nps plantae"
+    "michi"
+    ;
+  }
+
+
+#gridContainer2 {
+    margin: 0px 5%;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 214px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "michi plantae"
+    ;
+  }
+
+  .row {
+    display: flex;
+  }
+  
+  .column1 {
+    width: 400px;
+    padding: 25px;
+  }
+  
+  .column2 {
+    width: 500px;
+    border: solid black 1px;
+    border-radius: 10px;
+    padding: 15px;
+    overflow-y: auto;
+    height: 410px;
+  }
+  
+  
+  /* dropdown */
+
+
+  .dropdown {
+    position: relative;
+    float: right;
+    
+  }
+
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+    left: auto;
+
+  }
+
+  a {
+      color: #000083;
+      text-decoration: none;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .desc:hover {
+      background-color: #F0E4FF;
+    }
+
+    .desc a:hover {
+        font-weight: bold;
+    }
+  
+  .desc {
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* footer */
+  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    width: 650px;
+    height: 2.5rem;
+    margin: 0 auto;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: Arial;
+    margin: 0 auto;
+  }
+  
+  .footer img {
+  height: 25px;
+  }
+
+  @media only screen and (max-width: 600){
+
+    #gridContainer {
+        margin: 0px 5%;
+        text-align: center;
+        display: grid;
+        grid-template-rows: 214px 214px 214px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "finalproject ourhouse"
+        "nps plantae"
+        "michi"
+        ;
+      }
+    
+    
+    #gridContainer2 {
+        margin: 0px 5%;
+        text-align: center;
+        display: grid;
+        grid-template-rows: 214px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "michi plantae"
+        ;
+      }
+  }
